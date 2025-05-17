@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiChatBot Status</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <style>
+        .bot-status {
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .status-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .bot-description {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4">MultiChatBot</h1>
+            <p class="lead">A multilingual Telegram bot for user matching with premium features</p>
+        </div>
+        
+        <div class="bot-status text-center">
+            <div class="status-icon text-success">
+                <i data-feather="check-circle"></i>
+            </div>
+            <h2 class="mb-3">Bot is running</h2>
+            <p class="text-muted">Keep-alive server is active and the bot is online.</p>
+        </div>
+        
+        <div class="bot-description">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Bot Features</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Multi-language support (English, Arabic, Hindi, Indonesian)</li>
+                        <li class="list-group-item">User profile creation and management</li>
+                        <li class="list-group-item">Message forwarding from users to a group</li>
+                        <li class="list-group-item">Premium partner search with payment verification</li>
+                        <li class="list-group-item">Admin commands for user management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer mt-5 py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-muted">© 2023 MultiChatBot</span>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Feather icons
+            feather.replace();
+            
+            // Auto-refresh the page every 5 minutes to help maintain connection
+            setTimeout(function() {
+                window.location.reload();
+            }, 300000); // 5 minutes in milliseconds
+        });
+    </script>
+</body>
+</html>

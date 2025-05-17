@@ -1,0 +1,3 @@
+python-telegram-bot
+# Add other libraries as needed, e.g., for database, payment APIs, etc.
+
